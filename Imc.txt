@@ -1,0 +1,140 @@
+class Imc{
+	public static void main(String[] args) {
+	String nombre;
+	double peso;
+	double estatura;
+	double imc;
+	int edad;
+	
+		System.out.println("");
+		System.out.println("                      Bienvenido a la calculadora de Masa Corporal!");   
+		System.out.println("");
+		System.out.println("Ingrese su nombre");  
+		nombre=(System.console().readLine());
+		System.out.println("");
+		System.out.println("Ingrese su edad"); 
+		edad =Integer.parseInt(System.console().readLine());  
+		System.out.println("");
+		System.out.println("Ingrese su peso");
+		peso=Double.parseDouble(System.console().readLine());System.out.print("kg");
+		System.out.println("");
+		System.out.println("Ingrese su estatura en metros");
+		estatura=Double.parseDouble(System.console().readLine());
+		System.out.println("");
+		imc=(peso/(estatura*estatura));
+	
+	
+		if (imc<16.00)
+		{
+			System.out.println(nombre);
+			System.out.println("SU IMC ES");
+			System.out.println(imc);
+			System.out.println("INDICA DELGADEZ SEVERA");
+			System.out.println("");
+			System.out.println("COMENTARIOS");
+			System.out.println("Deberia visitar a un medico ya que podria ser un criterio de hospitalizacion");
+		}	
+		
+		else if (imc>=16.00&&imc<=16.99)
+		{
+			System.out.println(nombre);
+			System.out.println("SU IMC ES");
+			System.out.println(imc);
+			System.out.println("INDICA DELGADEZ MODERADA ");
+			System.out.println("");
+			System.out.println("COMENTARIOS");
+			System.out.println("Le aconsejo una dieta equilibrada y ejercicio para ganar peso y aumentar su masa muscular");
+		}	
+	
+		else if (imc>=17.00&&imc<=18.98)
+		{
+			System.out.println(nombre);
+			System.out.println("SU IMC ES");
+			System.out.println(imc);
+			System.out.println("INDICA DELGADEZ NO MUY PRONUNCIADA ");
+			System.out.println("");
+			System.out.println("COMENTARIOS");
+			System.out.println("Le aconsejo seguir una dieta equilibrada");
+		}	
+		
+		else if (imc>=18.99&&imc<=24.99)
+		{
+			System.out.println(nombre);
+			System.out.println("SU IMC ES");
+			System.out.println(imc);
+			System.out.println("INDICA NORMALIDAD");
+			System.out.println("");
+			System.out.println("COMENTARIOS");
+			System.out.println(" Tiene una cantidad sana de grasa en el cuerpo, que es asociado con una vida mas larga.");
+			System.out.println("FELICIDADES");
+		}   
+	
+		else if (imc>=25.00&&imc<=25.01)
+		{
+			System.out.println(nombre);
+			System.out.println("SU IMC ES");
+			System.out.println(imc);
+			System.out.println("INDICA SOBREPESO");
+			System.out.println("");
+			System.out.println("COMENTARIOS");
+			System.out.println("Es recomendable que deje malos habitos como comer viendo television");
+		}	
+		
+		else if (imc>=25.01&&imc<=29.99)
+		{
+			System.out.println(nombre);
+			System.out.println("SU IMC ES");
+			System.out.println(imc);
+			System.out.println("INDICA PREOBESO");
+			System.out.println("");
+			System.out.println("COMENTARIOS");
+			System.out.println("Esta aumentando el riesgo de enfermedades con su peso actual");
+		}
+		
+		else if (imc>=30.00&&imc<=30.01)
+		{  
+			System.out.println(nombre);
+			System.out.println("SU IMC ES");
+			System.out.println(imc);
+			System.out.println("INDICA OBESIDAD");
+			System.out.println("");
+			System.out.println("COMENTARIOS");
+			System.out.println("esta aumentado el riesgo de enfermedades");
+		}   
+		
+		else if (imc>=30.01&&imc<=34.99)
+		{
+			System.out.println(nombre);
+			System.out.println("SU IMC ES");
+			System.out.println(imc);
+			System.out.println("INDICA OBESIDAD TIPO I");
+			System.out.println("");
+			System.out.println("COMENTARIOS");
+			System.out.println("Deberia perder peso cambiando de dieta y haciendo mas ejercicio");
+		}	
+		
+		else if (imc>=35.00&&imc<=39.99)
+		{
+			System.out.println(nombre);
+			System.out.println("SU IMC ES");
+			System.out.println(imc);
+			System.out.println("INDICA OBESIDAD TIPO II");
+			System.out.println("");
+			System.out.println("COMENTARIOS");
+			System.out.println("Deberia perder peso");
+		}	 
+		
+		else if (imc>=40.00)
+		{
+			System.out.println(nombre);
+			System.out.println("SU IMC ES");
+			System.out.println(imc);
+			System.out.println("INDICA OBESIDAD TIPO III");
+			System.out.println("");
+			System.out.println("COMENTARIOS");
+			System.out.println("Esta en peligro de  un problema cardíaco, diabetes, hipertensión,visite a su medico");
+		}
+	}
+} 
+    
+	
